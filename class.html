@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>academy reversation</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free HTML Templates" name="keywords" />
+    <meta content="Free HTML Templates" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body dir="rtl">
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-light position-relative shadow">
+      <nav
+        class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+        <img src="img/logo.jpeg" alt="logo" class="logo">
+        <a
+          href="index.html"
+          class="navbar-brand font-weight-bold text-secondary"
+          style="font-size: 50px">
+
+          
+          <span class="text-primary">اكاديمية حياة</span>
+        </a>
+
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav font-weight-bold mx-auto py-0">
+            <a href="index.html" class="nav-item nav-link">الصفحة الرئيسية</a>
+            <a href="about.html" class="nav-item nav-link ">عن الكاديمية</a>
+            <a href="team.html" class="nav-item nav-link">المدرسين</a>
+            <a href="class.html" class="nav-item nav-link active">حجز</a>
+            <a href="contact.html" class="nav-item nav-link ">تواصل معنا</a>
+          </div>
+          
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary mb-5">
+      <div
+        class="d-flex flex-column align-items-center justify-content-center"
+        style="min-height: 400px"
+      >
+        <h3 class="display-3 font-weight-bold text-white">احجز الان </h3>
+        <div class="d-inline-flex text-white">
+          <p class="m-0"><a class="text-white" href="">الصفحة الرئيسية</a></p>
+          <p class="m-0 px-2">/</p>
+          <p class="m-0">للحجز</p>
+        </div>
+      </div>
+    </div>
+    <!-- Header End -->
+
+   
+    <!-- Registration Start -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="card border-0">
+              <div class="card-header bg-secondary text-center p-4">
+                <h1 class="text-white m-0">احجز الان</h1>
+              </div>
+              <div class="card-body rounded-bottom bg-primary p-5">
+                <form>
+                  <div class="form-group d-flex">
+                    <input
+                      type="text"
+                      class="form-control border-0 p-4"
+                      placeholder="اسم الطالب"
+                      required="required"
+                    />
+                    <input
+                      type="text"
+                      class="form-control border-0 p-4 mr-2"
+                      placeholder=" اسم ولي الامر" 
+                      required="required"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control border-0 p-4"
+                      placeholder="  محل الاقامة"
+                      required="required"
+                    />
+                  </div>
+                  <div class="form-group d-flex">
+                    <input
+                      type="number"
+                      class="form-control border-0 p-4"
+                      placeholder="السن"
+                      required="required"
+                    />
+                    <input
+                      type="date"
+                      class="form-control border-0 p-4 mr-2"
+                      placeholder="تاريخ الميلاد"
+                      required="required"
+                    />
+                  </div>
+                  <div class="form-group d-flex">
+                    <input
+                      type="email"
+                      class="form-control border-0 p-4 "
+                      placeholder="الايميل"
+                      required="required"
+                    />
+                    <input
+                      type="tel"
+                      class="form-control border-0 p-4 mr-2"
+                      placeholder="رقم الهاتف"
+                      required="required"
+                    />
+                  </div>
+                  <div class="form-group d-flex">
+                    <select
+                    onclick="Choose();"
+                    id="choose-level"
+                      class="custom-select border-0 px-4 ml-2"
+                      style="height: 47px"
+                    >
+                      <option selected>اختر المرحله  الدراسية</option>
+                      <option value="1"> الابتدائية</option>
+                      <option value="2"> الاعدادية</option>
+                      <option value="3"> الثانوية</option>
+                    </select>
+                    <select 
+                    id="primary"
+                      class="custom-select border-0 px-4 ml-2"
+                      style="height: 47px"
+                    >
+                      <option selected>اختر الصف  الدراسي</option>
+                      <option value="1"> الاول الابتدائي</option>
+                      <option value="2"> الثاني الابتدائي</option>
+                      <option value="3"> الثالث الابتدائي</option>
+                      <option value="4"> الرابع الابتدائي</option>
+                      <option value="5"> الخامس الابتدائي</option>
+                      <option value="6"> السادس الابتدائي</option>
+                    </select>
+                    <select
+                    id="middle"
+                      class="custom-select border-0 px-4 ml-2"
+                      style="height: 47px"
+                    >
+                      <option selected>اختر الصف  الدراسي</option>
+                      <option value="1"> الاول الاعدادي</option>
+                      <option value="2"> الثاني الاعدادي</option>
+                      <option value="3"> الثالث الاعدادي</option>
+                    </select>
+                    <select
+                    id="high"
+                      class="custom-select border-0 px-4"
+                      style="height: 47px"
+                    >
+                      <option selected>اختر الصف  الدراسي</option>
+                      <option value="1"> الاول الثانوي</option>
+                      <option value="2"> الثاني الثانوي</option>
+                      <option value="3"> الثالث الثانوي</option>
+                    </select>
+                  </div>
+                  <select
+                    id="primary-teacher"
+                      class="custom-select border-0 px-4"
+                      style="height: 47px"
+                    >
+                      <option selected>اختر المدرس</option>
+                      <option value="1"> مدرس ابتدائي (الاسم : (المادة الدراسية</option>    
+                    </select>
+                  <select
+                    id="middle-teacher"
+                      class="custom-select border-0 px-4"
+                      style="height: 47px"
+                    >
+                      <option selected>اختر المدرس</option>
+                      <option value="1">  مدرس اعدادي (الاسم : (المادة الدراسية</option>
+                      <option value="2">  مدرس اعدادي (الاسم : (المادة الدراسية</option>
+                    </select>
+                  <select
+                    id="high-teacher"
+                      class="custom-select border-0 px-4"
+                      style="height: 47px"
+                    >
+                      <option selected>اختر المدرس</option>
+                      <option value="1">  مدرس ثانوي (الاسم : (المادة الدراسية</option>
+                      <option value="2">  مدرس ثانوي (الاسم : (المادة الدراسية</option>
+                      <option value="3">  مدرس ثانوي (الاسم : (المادة الدراسية</option>
+                      
+                    </select>
+                  
+                  <div>
+
+
+
+
+
+                                  <button
+                                    class="btn btn-secondary btn-block border-0 py-3 mt-3"
+                                    type="submit">
+                                    احجز الان
+                                  </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Registration End -->
+ <!-- Footer Start -->
+ <div
+ class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5 text-right"
+>
+ <div class="row pt-5 ">
+   <div class="col-lg-4 col-md-6 mb-5">
+     <a
+       href=""
+       class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
+       style="font-size: 40px; line-height: 40px"
+     >
+       
+       <span class="text-white">اكاديمية حياة</span>
+     </a>
+     <p>
+       لنشر العلم والتعليم حول العالم بما يؤهل جميع الاطفال للتفوق العلمي والمجتمعي. توفير للاطفال بيئه تعليمية سليمة لتطوير قدراتهم العقليه والنفسيه والاجتماعيه والثقافيه مع استخدام
+        الوسائل التقنيه المعاصره للتعليم عن بعد بضوابطه التي تقربه من التعليم المباشر روئيتنا ان تكون الاكاديمية ضمن افضل المواقع العلمية للتعليم عن بعد 
+     </p>
+             </div>
+   <div class="col-lg-4 col-md-6 mb-5">
+     <h3 class="text-primary mb-4">للتواصل</h3>
+       <h5 class=" text-white"> العنوان &nbsp;<i class="fa fa-map-marker-alt text-primary"></i></h5>
+       <p>لم يتم التحديد بعد </p>
+       <h5 class=" text-white"> البريد الالكتروني &nbsp;<i class="fa fa-envelope text-primary"></i></h5>
+       <div class="pl-3">
+         <p>hayaa_online_education@yahoo.com</p>
+     </div>
+       <h5 class=" text-white"> رقم الهاتف &nbsp;<i class="fa fa-phone-alt text-primary"></i></h5>
+       <div class="pl-3">
+         <p> 01147873993</p>
+     </div>
+   </div>
+   <div class="col-lg-4 col-md-6 mb-5">
+     <h3 class="text-primary mb-4"> روابط سريعه</h3>
+     <div class="d-flex flex-column justify-content-start">
+       <a class="text-white mb-2" href="index.html"> الصفحة الرئيسية<i class="fa fa-angle-left mr-2"></i> </a>
+       <a class="text-white mb-2" href="about.html"> من نحن <i class="fa fa-angle-left mr-2"></i> </a>
+       
+       <a class="text-white mb-2" href="team.html"> المدرسين<i class="fa fa-angle-left mr-2"></i> </a>
+       
+       <a class="text-white mb-2" href="contact.html"> تواصل معنا <i class="fa fa-angle-left mr-2"></i> </a>
+
+       <a class="text-white mb-2" href="class.html"> حجز<i class="fa fa-angle-left mr-2"></i> </a>
+     </div>
+   </div>
+   
+ </div>
+ 
+</div>
+<!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary p-3 back-to-top"
+      ><i class="fa fa-angle-double-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
